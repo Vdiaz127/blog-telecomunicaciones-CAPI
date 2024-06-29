@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ChapterSection from '../components/ChapterSection.astro';
+import InfoSection from '../components/InfoSection.astro'
+---
+
+<Layout title="SISTEMAS ELECTRÓNICOS DE COMUNICACIONES">
+	<main>
+		<ChapterSection
+			title="SISTEMAS ELECTRÓNICOS DE COMUNICACIONES"
+			content= "El diagrama de bloques de un sistema electrónico de comunicaciones se compone de tres partes principales: el transmisor, el medio de transmisión y el receptor."
+			imageUrl='media/grafica1.jpg'	
+			imageAlt='Diagrama simplificado de bloques de un sistema de comunicaciones electrónicas'
+	  	/>
+
+		<p><b>Transmisor:</b> Dispositivos y circuitos electrónicos que convierten la información original en una señal adecuada para ser transmitida.</p>
+		<br>
+		<p><b>Medio de transmisión:</b> Transporta las señales desde el transmisor hasta el receptor. Puede ser:</p>
+		<ul>
+			<li>Cables de cobre que llevan señales como corriente eléctrica.</li>
+			<li>Cables de fibra óptica que llevan señales como luz.</li>
+			<li>Espacio libre que lleva ondas de radio.</li>
+		</ul>
+		<br>
+		<p><b>Receptor:</b> Dispositivos y circuitos electrónicos que reciben las señales transmitidas y las reconvierten a su forma original.</p>
+		
+		
+		<div class="navigation-buttons">
+			<a href="/" class="button">Atrás</a>
+			<a href="/pag2" class="button">Siguiente</a>
+		</div>
+		
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.navigation-buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+	}
+	.button {
+		padding: 0.5rem 1rem;
+		background-color: #007BFF;
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+	}
+	.button:hover {
+		background-color: #0056b3;
+	}
+</style>

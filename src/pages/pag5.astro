@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ChapterSection from '../components/ChapterSection.astro';
+import InfoSection from '../components/InfoSection.astro'
+---
+
+<Layout title="Modos de Transmisión">
+	<main>
+		<ChapterSection
+			title="Modos de Transmisión"
+			content= "Los sistemas electrónicos de comunicaciones se pueden diseñar para manejar la transmisión de datos en una sola dirección o en ambas direcciones, con variaciones en la simultaneidad de dichas transmisiones. Los cuatro modos de transmisión principales son: símplex, semidúplex, dúplex y dúplex total/general."
+		/>
+		<br>
+		<p class="text-center"><b>Símplex (SX)</b></p>
+		<p>En el modo símplex, la transmisión solo se realiza en una dirección. Este tipo de sistemas se conocen también como de un solo sentido, solo recibir o solo transmitir. Un ejemplo de transmisión símplex es la radiodifusión comercial de radio o televisión, donde la estación de radio transmite y los receptores solo reciben.</p>
+		<br>
+		<p class="text-center"><b>Semidúplex (HDX)</b></p>
+		<p>En el modo semidúplex, las transmisiones se pueden realizar en ambas direcciones, pero no al mismo tiempo. Estos sistemas son conocidos como de alternar en ambos sentidos. Un ejemplo común son los sistemas de radio de dos vías, como los radios de banda civil y de policía, que usan un botón para hablar (PTT, push-to-talk).</p>
+		<br>
+		<p class="text-center"><b>Dúplex Total (FDX)</b></p>
+		<p>El modo dúplex total permite transmisiones en ambas direcciones al mismo tiempo. A estos sistemas se les llama también simultáneos de dos direcciones. Un ejemplo típico es un sistema telefónico, donde ambas partes pueden hablar y escuchar simultáneamente.</p>
+		<br>
+		<p class="text-center"><b>Dúplex Total/General (F/FDX)</b></p>
+		<p>En el modo dúplex total/general es posible transmitir y recibir simultáneamente, pero no necesariamente entre las mismas dos estaciones. Este modo se utiliza principalmente en circuitos de comunicaciones de datos. Un ejemplo es el Servicio Postal de Estados Unidos, donde una estación puede recibir de una fuente y transmitir a otra simultáneamente​​.</p>
+		<br>
+		<div class="navigation-buttons">
+			<a href="/pag4" class="button">Atrás</a>
+			<a href="/" class="button">Siguiente</a>
+		</div>
+		
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.navigation-buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+	}
+	.button {
+		padding: 0.5rem 1rem;
+		background-color: #007BFF;
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+	}
+	.button:hover {
+		background-color: #0056b3;
+	}
+</style>

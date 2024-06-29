@@ -1,0 +1,40 @@
+---
+export interface Props {
+  text: string;
+  imageUrl?: string;  // Hacemos que imageUrl sea opcional
+  imageAlt?: string;  // Hacemos que imageAlt sea opcional
+  imagePosition?: 'left' | 'right';  // Hacemos que imagePosition sea opcional
+}
+
+const { text, imageUrl, imageAlt, imagePosition = 'right' } = Astro.props;
+---
+
+<style>
+  .info-section {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .info-section img {
+    max-width: 200px;
+    margin: 0 20px;
+  }
+  .info-section.left img {
+    order: -1;
+  }
+  .info-section.right img {
+    order: 1;
+  }
+  .info-section .text {
+    flex: 1;
+  }
+</style>
+
+<div class={`info-section ${imagePosition}`}>
+  {imageUrl && (
+    <img src={imageUrl} alt={imageAlt || 'Image'} />
+  )}
+  <div class="text">
+    {text}
+  </div>
+</div>

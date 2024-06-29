@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  content: string;
+  imageUrl?: string;  // Hacemos que imageUrl sea opcional
+  imageAlt?: string;  // Hacemos que imageAlt sea opcional
+}
+
+const { title, content, imageUrl, imageAlt } = Astro.props;
+---
+
+<section class="p-6 bg-white shadow-md rounded-md my-4">
+  <h2 class="text-2xl flex font-bold text-black justify-center mb-4">{title}</h2>
+  <div class="text-gray-700 mb-4">{content}</div>
+  {imageUrl && (
+    <div class="flex justify-center">
+      <img class="max-w-full h-auto" src={imageUrl} alt={imageAlt || 'Image'} />
+    </div>
+  )}
+</section>
