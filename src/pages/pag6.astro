@@ -1,0 +1,88 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ChapterSection from '../components/ChapterSection.astro';
+import ImagenDescription from '../components/ImagenDescription.astro'
+---
+
+<Layout title="Configuraciones de los Circuitos">
+	<main>
+		<ChapterSection
+			title="Configuraciones de los Circuitos"
+			content= "Los circuitos de comunicaciones electrónicas se pueden configurar en varias formas distintas. A esas configuraciones se les llama arreglos de circuito, y pueden abarcar la transmisión a dos y a cuatro hilos."
+		/>
+		<br>
+		<p><b>Transmisión a Dos Hilos</b></p>
+		<p>La transmisión a dos hilos utiliza dos conductores: uno para la señal y otro para una referencia o tierra. Es ideal para transmisiones símplex, pero también puede usarse en transmisiones semidúplex y dúplex.</p>
+		
+		<ImagenDescription
+			src="/media/fig1-5a.jpg"
+			alt="fig1-5a"
+			description="Fig. 1-5a: Muestra un circuito pasivo formado por dos conductores que conectan una fuente de información a través de un transmisor con un receptor. Esta configuración solo permite transmisión en un sentido y no incorpora ganancia a la señal."
+		/>
+
+		<ImagenDescription
+			src="/media/fig1-5b.jpg"
+			alt="fig1-5b"
+			description="Fig. 1-5b: Presenta un circuito activo con un amplificador entre el transmisor y el receptor. El amplificador es unidireccional, limitando las transmisiones a una sola dirección. Para transmisiones semidúplex o dúplex, se puede usar modulación para multiplexar las señales y evitar interferencias, permitiendo su separación en el receptor."
+		/>
+
+		<p><b>Transmisión a Cuatro Hilos</b></p>
+		<p>En la transmisión a cuatro hilos, se utilizan cuatro conductores: dos para la señal y dos para la referencia o tierra. Esta configuración es ideal para la transmisión dúplex, permitiendo transmisiones simultáneas en ambas direcciones.</p>
+
+
+		<ImagenDescription
+			src="/media/fig1-6.jpg"
+			alt="fig1-6"
+			description="Fig. 1-6: Muestra un sistema activo de cuatro hilos, equivalente a dos circuitos de dos hilos, uno para cada dirección de transmisión."
+		/>
+
+		<p><b>Híbridos y Supresores de Eco</b></p>
+		<p>Los híbridos y supresores de eco son componentes esenciales para manejar las señales en circuitos de transmisión a cuatro hilos, evitando problemas de eco.</p>
+
+
+		<ImagenDescription
+			src="/media/fig1-7.jpg"
+			alt="fig1-7"
+			description="Fig. 1-7: Diagrama de un terminador de dos a cuatro hilos, también conocido como híbrido."
+		/>
+
+		<ImagenDescription
+			src="/media/fig1-8.jpg"
+			alt="fig1-8"
+			description="Fig. 1-8: Diagrama de un supresor de eco, que elimina el eco en un extremo del circuito de cuatro hilos. El detector de voz activa el amplificador en la dirección correcta y desactiva el amplificador en la dirección opuesta, evitando el retorno del eco. Sin embargo, el uso de supresores de eco limita la operación a semidúplex."
+		/>
+
+		<div class="navigation-buttons">
+			<a href="/pag5" class="button">Atrás</a>
+			<a href="/pag7" class="button">Siguiente</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.navigation-buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+	}
+	.button {
+		padding: 0.5rem 1rem;
+		background-color: #007BFF;
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+	}
+	.button:hover {
+		background-color: #0056b3;
+	}
+</style>

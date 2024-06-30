@@ -1,0 +1,152 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ChapterSection from '../components/ChapterSection.astro';
+import ImagenDescription from '../components/ImagenDescription.astro';
+---
+
+<Layout title="Análisis de Ruido">
+  <main>
+    <ChapterSection
+			title="Análisis de Ruido"
+			content= "El ruido eléctrico se define como cualquier energía eléctrica indeseable que se encuentra en la banda de paso de la señal. Por ejemplo, en la grabación de audio, se consideran ruido todas las señales eléctricas no deseadas dentro de la banda de frecuencias de audio de 0 a 15 kHz, que interfieren con la música. "
+		/>
+
+    <ImagenDescription
+					src="/media/fig1-30.jpg"
+					alt="fig1-30"
+					description="Efectos del ruido sobre una señal: (a) señal sin ruido; (b) señal con ruido"
+				/>
+
+    <h2 class="text-2xl font-semibold mb-4">Clasificación del Ruido</h2>
+    <p class="ml-2 mb-2">El ruido se puede clasificar en dos categorías:</p>
+    <ul class="list-disc ml-6 mb-6">
+      <li class="ml-2"><b>Ruido Correlacionado:</b> Existe solo cuando hay una señal.</li>
+      <li class="ml-2"><b>Ruido No Correlacionado:</b> Presente siempre, haya o no señal. Se subdivide en ruido externo e interno.</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mb-2">Ruido No Correlacionado</h3>
+    <h4 class="text-lg font-semibold mb-2">Ruido Externo</h4>
+    <p class="ml-2 mb-6">
+      El ruido externo se genera fuera del dispositivo o circuito y tiene tres causas principales:
+    </p>
+    <ul class="list-disc ml-6 mb-6">
+      <li class="ml-2"><b>Ruido Atmosférico:</b> Originado por perturbaciones eléctricas naturales dentro de la atmósfera terrestre, como rayos y electricidad estática. Su magnitud es inversamente proporcional a su frecuencia, siendo insignificante a frecuencias mayores de 30 MHz.</li>
+      <li class="ml-2"><b>Ruido Extraterrestre:</b> Consiste en señales eléctricas originadas fuera de la atmósfera terrestre y se subdivide en ruido solar y cósmico. El ruido solar es generado por el calor solar, variando en intensidad por actividad de manchas solares. El ruido cósmico se distribuye uniformemente por el cielo y se conoce también como ruido de cuerpo negro.</li>
+      <li class="ml-2"><b>Ruido Causado por el Hombre:</b> Producido por mecanismos que generan chispas, como motores eléctricos, sistemas de encendido automotriz, generadores de energía y lámparas fluorescentes. Este ruido es más intenso en áreas industriales y densamente pobladas, conocido también como ruido industrial.</li>
+    </ul>
+
+    <h4 class="text-lg font-semibold mb-2">Ruido Interno</h4>
+    <ul class="list-disc ml-6 mb-6">
+      <li class="ml-2"><b>Ruido de Disparo:</b> Debido a la llegada aleatoria de portadoras (agujeros y electrones) al elemento de salida de un dispositivo electrónico. Este ruido se observa en la corriente anódica de amplificadores de tubo al vacío.</li>
+      <li class="ml-2"><b>Ruido de Tiempo de Tránsito:</b> Asociado con el tiempo que tardan los portadores de carga en atravesar el dispositivo.</li>
+      <li class="ml-2"><b>Ruido Térmico:</b> Generado por el movimiento aleatorio de electrones en un conductor debido a su temperatura. La densidad de potencia espectral del ruido térmico está dada por: 𝑁<sub>0</sub> = 𝑘𝑇, donde 𝑘 es la constante de Boltzmann y 𝑇 es la temperatura absoluta en Kelvin.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-4">Voltaje del Ruido y su Gráfica</h2>
+    <p class="ml-2 mb-6">
+      El voltaje del ruido puede representarse gráficamente como una función del tiempo y la frecuencia. Una gráfica típica del voltaje de ruido muestra una señal aleatoria superpuesta a una señal deseada, lo que afecta su forma de onda original.
+    </p>
+    <ImagenDescription
+					src="/media/fig1-31.jpg"
+					alt="fig1-31"
+					description="Circuito equivalente a una fuente de ruido"
+				/>
+
+    <h2 class="text-2xl font-semibold mb-4">Ruido Correlacionado</h2>
+    <p class="ml-2 mb-6">
+      El ruido correlacionado está relacionado directamente con la señal presente y solo existe cuando hay una señal. Ejemplos incluyen ruido de intermodulación y ruido de parásitos en sistemas de modulación.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Factor de Ruido y Cifra de Ruido</h2>
+    <p class="ml-2 mb-2"><b>Fórmula:</b></p>
+    <p class="ml-4 mb-2">
+      El factor de ruido (F) y la cifra de ruido (NF) son parámetros que indican cuánto se deteriora la relación señal a ruido (SNR) al pasar por un circuito.
+    </p>
+    <p class="ml-4 mb-2">
+      𝐹 = 𝑆𝑁𝑅<sub>entrada</sub> / 𝑆𝑁𝑅<sub>salida</sub>
+    </p>
+    <p class="ml-4 mb-6">
+      La cifra de ruido es el factor de ruido expresado en decibelios (dB):
+      <br>𝑁𝐹(𝑑𝐵) = 10log𝐹
+    </p>
+
+    <ImagenDescription
+					src="/media/fig1-32.jpg"
+					alt="fig1-32"
+					description="Cifra de ruido: (a) amplificador ideal sin ruido; (b) amplificador con ruido generado internamente"
+				/>
+
+      <ImagenDescription
+        src="/media/fig1-33.jpg"
+        alt="fig1-33"
+        description="Cifra de ruido para amplificadores en cascada"
+      />
+
+    <h2 class="text-2xl font-semibold mb-4">Ruido Impulsivo</h2>
+    <p class="ml-2 mb-6">
+      El ruido impulsivo es una forma de ruido de corta duración y alta amplitud, generado por eventos transitorios como relámpagos o interrupciones de energía.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Interferencia</h2>
+    <p class="ml-2 mb-6">
+      La interferencia es un tipo de ruido que se produce cuando señales no deseadas se superponen a la señal deseada, degradando su calidad. Puede ser causada por varias fuentes, incluyendo otros dispositivos electrónicos y señales de radiofrecuencia.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Temperatura Equivalente de Ruido</h2>
+    <p class="ml-2 mb-2"><b>Fórmula:</b></p>
+    <p class="ml-4 mb-2">
+      La temperatura equivalente de ruido (T<sub>e</sub>) es una medida del ruido generado por un sistema y se define como la temperatura a la cual un resistor generaría el mismo nivel de ruido térmico que el sistema en cuestión.
+    </p>
+    <p class="ml-4 mb-2">
+      𝑇<sub>e</sub> = (𝐹 - 1)𝑇<sub>0</sub>
+    </p>
+    <p class="ml-4 mb-6">
+      Donde 𝑇<sub>0</sub> es la temperatura de referencia, generalmente 290 K.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4">Relación de Potencia de Señal a Ruido (S/N)</h2>
+    <p class="ml-2 mb-2"><b>Fórmula:</b></p>
+    <p class="ml-4 mb-2">
+      La relación S/N es el cociente entre la potencia de la señal y la potencia del ruido:
+    </p>
+    <p class="ml-4 mb-2">
+      𝑆/𝑁 = 𝑃<sub>s</sub> / 𝑃<sub>n</sub>
+    </p>
+    <p class="ml-4 mb-2">
+      Se puede expresar en decibelios (dB):
+      <br>S/N (dB) = 10log(𝑃<sub>s</sub> / 𝑃<sub>n</sub>)
+    </p>
+
+    <div class="navigation-buttons">
+      <a href="/pag8" class="button">Atrás</a>
+      <a href="/" class="button">Index</a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  .button:hover {
+    background-color: #357ABD;
+  }
+</style>
