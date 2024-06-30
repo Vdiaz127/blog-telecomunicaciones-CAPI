@@ -1,94 +1,91 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ChapterSection from '../components/ChapterSection.astro';
-import InfoSection from '../components/InfoSection.astro'
+import InfoSection from '../components/InfoSection.astro';
 ---
 
 <Layout title="ANCHO DE BANDA Y CAPACIDAD DE INFORMACIÓN">
-	<main>
-		<ChapterSection
-			title="ANCHO DE BANDA Y CAPACIDAD DE INFORMACIÓN"
-			content= "l ancho de banda y la capacidad de información son conceptos fundamentales en los sistemas de comunicaciones electrónicas, con dos limitaciones principales: el ruido y el ancho de banda."
-		/>
-		
-		<p><b>Definición de Ancho de Banda</b></p>
-		<p>El ancho de banda de una señal de información se define como la diferencia entre las frecuencias máxima y mínima contenidas en la señal. Para un canal de comunicaciones, el ancho de banda es la diferencia entre las frecuencias máxima y mínima que pueden pasar por dicho canal, conocido como la banda de paso. El ancho de banda del canal debe ser suficientemente amplio para permitir el paso de todas las frecuencias importantes de la información.</p>
-		<br>
+  <main>
+    <ChapterSection
+      title="ANCHO DE BANDA Y CAPACIDAD DE INFORMACIÓN"
+      content="El ancho de banda y la capacidad de información son conceptos fundamentales en los sistemas de comunicaciones electrónicas, con dos limitaciones principales: el ruido y el ancho de banda."
+    />
+    
+    <p><b>Definición de Ancho de Banda</b></p>
+    <p>El ancho de banda de una señal de información se define como la diferencia entre las frecuencias máxima y mínima contenidas en la señal. Para un canal de comunicaciones, el ancho de banda es la diferencia entre las frecuencias máxima y mínima que pueden pasar por dicho canal, conocido como la banda de paso. El ancho de banda del canal debe ser suficientemente amplio para permitir el paso de todas las frecuencias importantes de la información.</p>
+    <br>
 
-		<p>Por ejemplo:</p>
-		<ul class="list-disc">
-			<li class="ml-16">Las frecuencias de voz varían entre 300 y 3000 Hz, por lo tanto, el canal para frecuencias de voz debe tener un ancho de banda de al menos 2700 Hz (3000 Hz - 300 Hz).</li>
-			<li class="ml-16">Un sistema de televisión por cable con una banda de paso de 500 a 5000 kHz tiene un ancho de banda de 4500 kHz​​.</li>
-		</ul>
-		<br>
-		<p><b>Teoría de la Información y Capacidad de Información</b></p>
-		<p>La teoría de la información estudia el uso eficiente del ancho de banda para transmitir información a través de sistemas de comunicación. La capacidad de información de un sistema de comunicaciones se mide por la cantidad de información que puede ser transferida en un tiempo determinado. Esta capacidad depende del ancho de banda del sistema y del tiempo de transmisión.</p>
-		<br>
-		<p><b>Ley de Hartley</b></p>
-		<p>Desarrollada por R. Hartley en 1920, establece que la capacidad de información (I) es una función del ancho de banda (B) y del tiempo de transmisión (t):</p>
-		<p class="text-center">I=B⋅t</p>
-		
-		<p>donde:</p>
+    <p>Por ejemplo:</p>
+    <ul class="list-disc ml-4 md:ml-16">
+      <li>Las frecuencias de voz varían entre 300 y 3000 Hz, por lo tanto, el canal para frecuencias de voz debe tener un ancho de banda de al menos 2700 Hz (3000 Hz - 300 Hz).</li>
+      <li>Un sistema de televisión por cable con una banda de paso de 500 a 5000 kHz tiene un ancho de banda de 4500 kHz​​.</li>
+    </ul>
+    <br>
+    <p><b>Teoría de la Información y Capacidad de Información</b></p>
+    <p>La teoría de la información estudia el uso eficiente del ancho de banda para transmitir información a través de sistemas de comunicación. La capacidad de información de un sistema de comunicaciones se mide por la cantidad de información que puede ser transferida en un tiempo determinado. Esta capacidad depende del ancho de banda del sistema y del tiempo de transmisión.</p>
+    <br>
+    <p><b>Ley de Hartley</b></p>
+    <p>Desarrollada por R. Hartley en 1920, establece que la capacidad de información (I) es una función del ancho de banda (B) y del tiempo de transmisión (t):</p>
+    <p class="text-center">I = B⋅t</p>
+    
+    <p>donde:</p>
+    <ul class="list-disc ml-4 md:ml-16">
+      <li>I es la capacidad de información.</li>
+      <li>B es el ancho de banda del sistema en hertz (Hz).</li>
+      <li>t es el tiempo de transmisión en segundos (s).</li>
+    </ul>
 
-		<ul class="list-disc">
-			<li class="ml-16">I es la capacidad de información.</li>
-			<li class="ml-16">B es el ancho de banda del sistema en hertz (Hz).</li>
-			<li class="ml-16">t es el tiempo de transmisión en segundos (s).</li>
-		</ul>
+    <p>La ecuación muestra que la capacidad de información es directamente proporcional al ancho de banda y al tiempo de transmisión. Duplicar el ancho de banda o el tiempo de transmisión duplicará la cantidad de información que el sistema puede transferir​​.</p>
+    <br>
+    <p><b>Límite de Shannon: </b>Claude E. Shannon, en 1948, relacionó la capacidad de información de un canal (en bits por segundo, bps) con el ancho de banda y la relación señal-ruido (S/N). La fórmula de Shannon es:</p>
+    <p class="text-center">𝐼 = 𝐵 log2 (1 + 𝑆/𝑁)</p>
+    <p>donde:</p>
+    <ul class="list-disc ml-4 md:ml-16">
+      <li>I es la capacidad de información en bps.</li>
+      <li>B es el ancho de banda en Hz.</li>
+      <li>𝑆/N es la relación de potencia de señal a ruido.</li>
+    </ul>
 
-		<p>La ecuación muestra que la capacidad de información es directamente proporcional al ancho de banda y al tiempo de transmisión. Duplicar el ancho de banda o el tiempo de transmisión duplicará la cantidad de información que el sistema puede transferir​​.</p>
-		<br>
-		<p><b>Límite de Shannon: </b>Claude E. Shannon, en 1948, relacionó la capacidad de información de un canal (en bits por segundo, bps) con el ancho de banda y la relación señal-ruido (S/N). La fórmula de Shannon es:</p>
-		<p class="text-center">𝐼 = 𝐵 log2 ( 1 + 𝑆/𝑁)</p>
-		<p>donde:</p>
+    <br>
+    <p>Para un canal de comunicaciones en banda de voz con una relación señal-ruido de 1000 (30 dB) y un ancho de banda de 2.7 kHz, la capacidad de información es:</p>
+    <p class="text-center">I = 2700 log2 (1 + 1000) ≈ 26.9 kbps</p>
+    <br>
+    <p>Para alcanzar este límite, se deben usar sistemas de transmisión digital que puedan manejar más de dos condiciones (símbolos) de salida​​.</p>
 
-		<ul class="list-disc">
-			<li class="ml-16">I es la capacidad de información en bps.</li>
-			<li class="ml-16">B es el ancho de banda en Hz.</li>
-			<li class="ml-16">𝑆/N es la relación de potencia de señal a ruido.</li>
-		</ul>
-
-		<br>
-		<p>Para un canal de comunicaciones en banda de voz con una relación señal-ruido de 1000 (30 dB) y un ancho de banda de 2.7 kHz, la capacidad de información es:</p>
-		<p>I=2700log2 (1+1000)≈26.9 kbps</p>
-		<br>
-		<p>Para alcanzar este límite, se deben usar sistemas de transmisión digital que puedan manejar más de dos condiciones (símbolos) de salida​​.</p>
-
-
-
-
-		<div class="navigation-buttons">
-			<a href="/pag3" class="button">Atrás</a>
-			<a href="/pag5" class="button">Siguiente</a>
-		</div>
-		
-	</main>
+    <div class="navigation-buttons">
+      <a href="/pag3" class="button">Atrás</a>
+      <a href="/pag5" class="button">Siguiente</a>
+    </div>
+    
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
 
-	.navigation-buttons {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 2rem;
-	}
-	.button {
-		padding: 0.5rem 1rem;
-		background-color: #007BFF;
-		color: white;
-		text-decoration: none;
-		border-radius: 4px;
-	}
-	.button:hover {
-		background-color: #0056b3;
-	}
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
 </style>

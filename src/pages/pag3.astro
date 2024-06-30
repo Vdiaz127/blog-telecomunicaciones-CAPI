@@ -1,92 +1,90 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ChapterSection from '../components/ChapterSection.astro';
-import InfoSection from '../components/InfoSection.astro'
+import InfoSection from '../components/InfoSection.astro';
 ---
 
-<Layout title="Espectro Electromagnetico">
-	<main>
-		<ChapterSection
-			title="EL ESPECTRO ELECTROMAGNÉTICO"
-			content= "El objetivo de un sistema electrónico de comunicaciones es transferir información entre dos o más lugares, conocidos como estaciones. Esto se logra convirtiendo la información original en energía electromagnética, la cual se transmite y se reconvierte a su forma original en la estación receptora. La energía electromagnética puede propagarse a través de conductores metálicos, ondas de radio en el espacio libre, o fibras ópticas."
-		/>
-		
-		<p>La <b>frecuencia</b> es la cantidad de veces que ocurre un movimiento periódico, como una onda senoidal, en un período de tiempo dado. La unidad de frecuencia es el hertz (Hz), que equivale a un ciclo por segundo. Frecuencias altas se representan con prefijos métricos como kHz (kilohertz) para miles de hertz, y MHz (megahertz) para millones de hertz.</p>
-		<br>
-		<h4 class="text-center font-bold">Frecuencias de Transmisión</h4>
-		<p>El espectro electromagnético cubre un rango amplio de frecuencias desde las subsónicas (unos pocos hertz) hasta los rayos cósmicos (10^22 Hz). Este espectro se subdivide en bandas de frecuencia, cada una con un nombre y límites específicos. En los Estados Unidos, la FCC asigna frecuencias para radiopropagación en el espacio libre, como la banda de FM comercial (88 MHz a 108 MHz). Las bandas se subdividen para diferentes servicios.</p>
-		<br>
-		<p><b>Designaciones de Banda</b></p>
-		<ul class="list-disc">
-			<li class="ml-16"><b>ELF (Extremely Low Frequencies):</b> 30 a 300 Hz. Incluyen señales de distribución eléctrica y telemetría de baja frecuencia.</li>
-			<li class="ml-16"><b>VF (Voice Frequencies):</b> 300 a 3000 Hz. Asociadas generalmente a la voz humana.</li>
-			<li class="ml-16"><b>VLF (Very Low Frequencies):</b> 3 a 30 kHz. Usadas en comunicaciones especiales como con submarinos.</li>
-			<li class="ml-16"><b>LF (Low Frequencies):</b> 30 a 300 kHz. Usadas principalmente en navegación marina y aeronáutica.</li>
-			<li class="ml-16"><b>MF (Medium Frequencies):</b> 300 kHz a 3 MHz. Usadas en emisiones comerciales de radio AM.</li>
-			<li class="ml-16"><b>HF (High Frequencies):</b> 3 a 30 MHz. Usadas en radiocomunicaciones en dos sentidos, emisiones de radio internacionales, y radioaficionados.</li>
-			<li class="ml-16"><b>VHF (Very High Frequencies):</b> 30 a 300 MHz. Usadas en radios móviles, comunicaciones marinas y aeronáuticas, FM comercial, y televisión.</li>
-			<li class="ml-16"><b>UHF (Ultra High Frequencies):</b> 300 MHz a 3 GHz. Usadas en televisión, comunicaciones móviles terrestres, teléfonos celulares, radar, navegación, y radio por microondas y satélite. Frecuencias mayores a 1 GHz se consideran microondas.</li>
-			<li class="ml-16"><b>SHF (Super High Frequencies):</b>b3 a 30 GHz. Usadas en sistemas de radiocomunicaciones por microondas y satélite./li>
-		</ul>
-		<br>
-		<p><b>Diagrama del Espectro Electromagnético</b></p>
-		<p>El espectro electromagnético muestra desde frecuencias subsónicas hasta rayos cósmicos, pasando por bandas de radiofrecuencias, microondas, infrarrojo, visible, ultravioleta, rayos X, gamma, y cósmicos. Este espectro ilustra las aplicaciones y usos en diferentes áreas de las comunicaciones electrónicas.</p>
-		<br>
-		
+<Layout title="Espectro Electromagnético">
+  <main>
+    <ChapterSection
+      title="EL ESPECTRO ELECTROMAGNÉTICO"
+      content="El objetivo de un sistema electrónico de comunicaciones es transferir información entre dos o más lugares, conocidos como estaciones. Esto se logra convirtiendo la información original en energía electromagnética, la cual se transmite y se reconvierte a su forma original en la estación receptora. La energía electromagnética puede propagarse a través de conductores metálicos, ondas de radio en el espacio libre, o fibras ópticas."
+    />
+    
+    <p>La <b>frecuencia</b> es la cantidad de veces que ocurre un movimiento periódico, como una onda senoidal, en un período de tiempo dado. La unidad de frecuencia es el hertz (Hz), que equivale a un ciclo por segundo. Frecuencias altas se representan con prefijos métricos como kHz (kilohertz) para miles de hertz, y MHz (megahertz) para millones de hertz.</p>
+    <br>
+    <h4 class="text-center font-bold">Frecuencias de Transmisión</h4>
+    <p>El espectro electromagnético cubre un rango amplio de frecuencias desde las subsónicas (unos pocos hertz) hasta los rayos cósmicos (10^22 Hz). Este espectro se subdivide en bandas de frecuencia, cada una con un nombre y límites específicos. En los Estados Unidos, la FCC asigna frecuencias para radiopropagación en el espacio libre, como la banda de FM comercial (88 MHz a 108 MHz). Las bandas se subdividen para diferentes servicios.</p>
+    <br>
+    <p><b>Designaciones de Banda</b></p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li><b>ELF (Extremely Low Frequencies):</b> 30 a 300 Hz. Incluyen señales de distribución eléctrica y telemetría de baja frecuencia.</li>
+      <li><b>VF (Voice Frequencies):</b> 300 a 3000 Hz. Asociadas generalmente a la voz humana.</li>
+      <li><b>VLF (Very Low Frequencies):</b> 3 a 30 kHz. Usadas en comunicaciones especiales como con submarinos.</li>
+      <li><b>LF (Low Frequencies):</b> 30 a 300 kHz. Usadas principalmente en navegación marina y aeronáutica.</li>
+      <li><b>MF (Medium Frequencies):</b> 300 kHz a 3 MHz. Usadas en emisiones comerciales de radio AM.</li>
+      <li><b>HF (High Frequencies):</b> 3 a 30 MHz. Usadas en radiocomunicaciones en dos sentidos, emisiones de radio internacionales, y radioaficionados.</li>
+      <li><b>VHF (Very High Frequencies):</b> 30 a 300 MHz. Usadas en radios móviles, comunicaciones marinas y aeronáuticas, FM comercial, y televisión.</li>
+      <li><b>UHF (Ultra High Frequencies):</b> 300 MHz a 3 GHz. Usadas en televisión, comunicaciones móviles terrestres, teléfonos celulares, radar, navegación, y radio por microondas y satélite. Frecuencias mayores a 1 GHz se consideran microondas.</li>
+      <li><b>SHF (Super High Frequencies):</b> 3 a 30 GHz. Usadas en sistemas de radiocomunicaciones por microondas y satélite.</li>
+    </ul>
+    <br>
+    <p><b>Diagrama del Espectro Electromagnético</b></p>
+    <p>El espectro electromagnético muestra desde frecuencias subsónicas hasta rayos cósmicos, pasando por bandas de radiofrecuencias, microondas, infrarrojo, visible, ultravioleta, rayos X, gamma, y cósmicos. Este espectro ilustra las aplicaciones y usos en diferentes áreas de las comunicaciones electrónicas.</p>
+    <br>
+    
+    <p><b>Longitud de Onda</b></p>
+    <p>La longitud de onda (λ) de una señal es la distancia entre dos puntos idénticos en ondas consecutivas. Se puede calcular usando la fórmula:</p>
+    <p class="grid justify-items-center">𝜆 = 𝑣 / 𝑓</p>
+    <p>donde:</p>
+    <p>λ es la longitud de onda en metros.</p>
+    <p>v es la velocidad de la onda (para ondas electromagnéticas en el vacío, v es la velocidad de la luz, 3×10^8 m/s).</p>
+    <p>f es la frecuencia en hertz.</p>
+    <br>
+    <div class="grid justify-items-center">
+      <img src="media/grafica3.jpg" alt="Diagrama del espectro electromagnético">
+    </div>
+    <br>
+    <p><b>Clasificación de los Transmisores</b></p>
+    <p>En Estados Unidos, los radiotransmisores se clasifican para fines de registro según:</p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li>Ancho de banda</li>
+      <li>Esquema de modulación</li>
+      <li>Tipo de información</li>
+    </ul>
+    
+    <p>Estas clasificaciones de emisión se identifican con una clave de tres símbolos, combinando letras y números.</p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li>Primer símbolo: Una letra que indica el tipo de modulación de la portadora principal.</li>
+      <li>Segundo símbolo: Un número que identifica el tipo de emisión.</li>
+      <li>Tercer símbolo: Una letra que describe el tipo de información transmitida.</li>
+    </ul>
+    
+    <div class="grid justify-items-center">
+      <br>
+      <img src="media/grafica4.jpg" alt="Clasificación de transmisores">
+    </div>
 
-
-		<p><b>Longitud de Onda</b></p>
-		La longitud de onda (λ) de una señal es la distancia entre dos puntos idénticos en ondas consecutivas. Se puede calcular usando la fórmula:
-		<p class="grid justify-items-center"> 𝜆=𝑣/𝑓  </p>
-		<p>donde:</p>
-		<p>λ es la longitud de onda en metros.</p>
-		<p>v es la velocidad de la onda (para ondas electromagnéticas en el vacío, v es la velocidad de la luz, 3×10^8m/s).</p>
-		<p>f es la frecuencia en hertz.</p>
-		<br>
-		<div class="grid justify-items-center">
-			<img src="media/grafica 3.jpg">
-		</div>
-		<br>
-		<p><b>Clasificación de los Transmisores</b></p>
-		<p>En Estados Unidos, los radiotransmisores se clasifican para fines de registro según:</p>
-		<ul class="list-disc">
-			<li class="ml-16">Ancho de banda</li>
-			<li class="ml-16">Esquema de modulación</li>
-			<li class="ml-16">Tipo de información</li>
-		</ul>
-		
-		<p>Estas clasificaciones de emisión se identifican con una clave de tres símbolos, combinando letras y números.</p>
-		<ul class="list-disc">
-			<li class="ml-16">Primer símbolo: Una letra que indica el tipo de modulación de la portadora principal.</li>
-			<li class="ml-16">Segundo símbolo: Un número que identifica el tipo de emisión.</li>
-			<li class="ml-16">Tercer símbolo: Una letra que describe el tipo de información transmitida.</li>
-		</ul>
-		
-		<div class="grid justify-items-center">
-			<br>
-			<img src="media/grafica 4.jpg">
-		</div>
-
-		<div class="navigation-buttons">
-			<a href="/pag2" class="button">Atrás</a>
-			<a href="/pag4" class="button">Siguiente</a>
-		</div>
-		
-	</main>
+    <div class="navigation-buttons">
+      <a href="/pag2" class="button">Atrás</a>
+      <a href="/pag4" class="button">Siguiente</a>
+    </div>
+    
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    color: white;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+  }
 
-	.navigation-buttons {
+  .navigation-buttons {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 2rem;
@@ -101,4 +99,14 @@ import InfoSection from '../components/InfoSection.astro'
 	.button:hover {
 		background-color: #0056b3;
 	}
+
+  @media (max-width: 768px) {
+    main {
+      font-size: 1rem;
+    }
+
+    .list-disc, .list-decimal {
+      padding-left: 1rem;
+    }
+  }
 </style>

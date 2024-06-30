@@ -28,6 +28,16 @@ const { text, imageUrl, imageAlt, imagePosition = 'right' } = Astro.props;
   .info-section .text {
     flex: 1;
   }
+
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    .info-section img {
+      margin: 0 auto 20px;
+    }
+  }
 </style>
 
 <div class={`info-section ${imagePosition}`}>

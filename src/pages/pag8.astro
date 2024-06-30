@@ -11,66 +11,63 @@ import ImagenDescription from '../components/ImagenDescription.astro'
 			content= "El mezclado es un proceso esencial en sistemas de comunicaciones, utilizado para combinar dos o más señales, y puede ser de dos tipos principales: lineal y no lineal."
 		/>
 
-		
-		<ul class="list-decimal ml-4">
-			<li>Suma Lineal:</li>
-			<ul class="list-disc ml-8">
-				<li class="ml-8"><b>Concepto:</b> Ocurre cuando las señales se combinan en un dispositivo lineal como una red pasiva o un amplificador de señal pequeña. Las señales se suman sin crear nuevas frecuencias, resultando en una forma de onda que es la suma de las señales individuales.</li>
+		<ul class="list-decimal ml-4 md:ml-16">
+			<li>Suma Lineal:
+				<ul class="list-disc ml-8 md:ml-20">
+					<li class="ml-8 md:ml-20"><b>Concepto:</b> Ocurre cuando las señales se combinan en un dispositivo lineal como una red pasiva o un amplificador de señal pequeña. Las señales se suman sin crear nuevas frecuencias, resultando en una forma de onda que es la suma de las señales individuales.</li>
 
-				<li class="ml-8"><b>Formulas:</b></li>
-					<li class="ml-12">Frecuencia única de entrada:</li>
+					<li class="ml-8 md:ml-20"><b>Formulas:</b></li>
+					<li class="ml-12 md:ml-24">Frecuencia única de entrada:</li>
 					<div class="grid justify-items-center">
 						<img src="media/lineal-unica-entrada.jpg">
 					</div>
-					<li class="ml-12">Varias frecuencias de entrada::</li>
+					<li class="ml-12 md:ml-24">Varias frecuencias de entrada:</li>
 					<div class="grid justify-items-center">
 						<img src="media/lineal-varias-entradas.jpg">
 					</div>
-				<br>
-				<ImagenDescription
-					src="/media/mezclado-lineal.jpg"
-					alt="mezclado-lineal"
-					description="Amplificación lineal de una sola frecuencia de entrada: (a) amplificación lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
-				/>
-				<br>
-				<ImagenDescription
-					src="/media/mezclado-lineal-2.jpg"
-					alt="mezclado-lineal-2"
-					description="Mezclado lineal: (a) Amplificación lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
-				/>
-			</ul> 
+					<br>
+					<ImagenDescription
+						src="/media/mezclado-lineal.jpg"
+						alt="mezclado-lineal"
+						description="Amplificación lineal de una sola frecuencia de entrada: (a) amplificación lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
+					/>
+					<br>
+					<ImagenDescription
+						src="/media/mezclado-lineal-2.jpg"
+						alt="mezclado-lineal-2"
+						description="Mezclado lineal: (a) Amplificación lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
+					/>
+				</ul>
+			</li>
+			<li>Mezclado No Lineal
+				<ul class="list-disc ml-8 md:ml-20">
+					<li class="ml-8 md:ml-20"><b>Concepto:</b> El mezclado no lineal ocurre cuando dos o más señales se combinan en un dispositivo no lineal, como un diodo o un amplificador de señal grande, generando componentes adicionales de frecuencia. Este proceso es crucial en muchas aplicaciones de comunicaciones, como la modulación y la demodulación.</li>
 
-			<li>Mezclado No Lineal</li>
-			<ul class="list-disc ml-8">
-				<li class="ml-8"><b>Concepto:</b> El mezclado no lineal ocurre cuando dos o más señales se combinan en un dispositivo no lineal, como un diodo o un amplificador de señal grande, generando componentes adicionales de frecuencia. Este proceso es crucial en muchas aplicaciones de comunicaciones, como la modulación y la demodulación.</li>
-
-				<li class="ml-8"><b>Formulas:</b></li>
-					<li class="ml-12"><b>Frecuencia única de entrada:</b> Cuando una señal de frecuencia única pasa por un dispositivo no lineal, se generan nuevas frecuencias que son múltiplos enteros de la frecuencia original. Esto se debe a la naturaleza no lineal de la respuesta del dispositivo.</li>
+					<li class="ml-8 md:ml-20"><b>Formulas:</b></li>
+					<li class="ml-12 md:ml-24"><b>Frecuencia única de entrada:</b> Cuando una señal de frecuencia única pasa por un dispositivo no lineal, se generan nuevas frecuencias que son múltiplos enteros de la frecuencia original. Esto se debe a la naturaleza no lineal de la respuesta del dispositivo.</li>
 					<div class="grid justify-items-center">
 						<img src="media/mezclado-no-lineal-unica-entrada.jpg">
 					</div>
-				<br>
-				<ImagenDescription
-					src="/media/mezclado-no-lineal.jpg"
-					alt="mezclado-no-lineal"
-					description="Amplificación no lineal de una sola frecuencia de entrada: (a) amplificación no lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
-				/>
-				<br>
-				<li class="ml-12"><b>Varias Frecuencias de Entrada:</b> Cuando dos señales de diferentes frecuencias pasan por un dispositivo no lineal, se generan componentes de frecuencia que son combinaciones lineales de las frecuencias de entrada. Estos nuevos componentes incluyen la suma y la diferencia de las frecuencias originales.</li>
+					<br>
+					<ImagenDescription
+						src="/media/mezclado-no-lineal.jpg"
+						alt="mezclado-no-lineal"
+						description="Amplificación no lineal de una sola frecuencia de entrada: (a) amplificación no lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
+					/>
+					<br>
+					<li class="ml-12 md:ml-24"><b>Varias Frecuencias de Entrada:</b> Cuando dos señales de diferentes frecuencias pasan por un dispositivo no lineal, se generan componentes de frecuencia que son combinaciones lineales de las frecuencias de entrada. Estos nuevos componentes incluyen la suma y la diferencia de las frecuencias originales.</li>
 					<div class="grid justify-items-center">
 						<img src="media/mezclado-no-lineal-varias-entradas.jpg">
 					</div>
-
-				<br>
-				<ImagenDescription
-					src="/media/mezclado-no-lineal-2.jpg"
-					alt="mezclado-no-lineal-2"
-					description="Amplificación no lineal de dos ondas senoides: (a) amplificación no lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
-				/>
-
-			</ul> 
+					<br>
+					<ImagenDescription
+						src="/media/mezclado-no-lineal-2.jpg"
+						alt="mezclado-no-lineal-2"
+						description="Amplificación no lineal de dos ondas senoides: (a) amplificación no lineal; (b) dominio del tiempo; (c) dominio de la frecuencia"
+					/>
+				</ul>
+			</li>
 		</ul>
-
 
 		<div class="navigation-buttons">
 			<a href="/pag7" class="button">Atrás</a>

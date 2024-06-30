@@ -1,95 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import ChapterSection from '../components/ChapterSection.astro';
-import InfoSection from '../components/InfoSection.astro'
+import InfoSection from '../components/InfoSection.astro';
 ---
 
 <Layout title="Capitulo I">
-	<main>
+  <main>
+    <h1>Capitulo I:<span class="text-gradient"> Introducción a las comunicaciones electrónicas</span></h1>
+    <h4 class="flex justify-center">Por: Ednoweri Anselmi y Victor Diaz</h4>
 
-		<h1>Capitulo I :<span class="text-gradient">Introducción a las comunicaciones electrónicas</span></h1>
-		<h4 class="flex justify-center">Por: Ednoweri Anselmi y Victor Diaz</h4>
-		
-		<ChapterSection
-			title="Introduccion"
-			content="El objetivo principal de un sistema electrónico de comunicaciones es transferir información de un lugar a otro. Esto implica la transmisión, recepción y procesamiento de información entre múltiples ubicaciones a través de circuitos electrónicos. La información puede ser analógica, como la voz humana o la música, o digital, como números binarios o códigos alfanuméricos, pero debe convertirse en energía electromagnética para ser transmitida."
-		/>
+    <ChapterSection
+      title="Introduccion"
+      content="El objetivo principal de un sistema electrónico de comunicaciones es transferir información de un lugar a otro. Esto implica la transmisión, recepción y procesamiento de información entre múltiples ubicaciones a través de circuitos electrónicos. La información puede ser analógica, como la voz humana o la música, o digital, como números binarios o códigos alfanuméricos, pero debe convertirse en energía electromagnética para ser transmitida."
+    />
 
-		<InfoSection
-			text='En 1837, Samuel Morse creó el primer sistema electrónico de comunicaciones, el telégrafo, que usaba inducción electromagnética para enviar información en forma de puntos y rayas a través de un conductor metálico. Más tarde, en 1876, Alexander Graham Bell y Thomas A. Watson lograron transmitir con éxito la conversación humana mediante el teléfono.'
-			imageUrl='/media/telegrafo.jpg'
-			imageAlt='Telegrafo y Samuel Morse'
-			imagePosition='left'
-		/>
+    <InfoSection
+      text='En 1837, Samuel Morse creó el primer sistema electrónico de comunicaciones, el telégrafo, que usaba inducción electromagnética para enviar información en forma de puntos y rayas a través de un conductor metálico. Más tarde, en 1876, Alexander Graham Bell y Thomas A. Watson lograron transmitir con éxito la conversación humana mediante el teléfono.'
+      imageUrl='/media/telegrafo.jpg'
+      imageAlt='Telegrafo y Samuel Morse'
+      imagePosition='left'
+    />
 
-		<InfoSection
-			text='En 1894, Guglielmo Marconi transmitió señales de radio sin hilos, y en 1908, Lee DeForest inventó el triodo, que permitió la amplificación de señales eléctricas. La radio comercial comenzó en 1920 con la transmisión de señales AM y en 1933, Edwin Howard Armstrong inventó la FM, iniciando la transmisión comercial en 1936.'
-			imageUrl='/media/Guglielmo Marconi.jpg'
-			imageAlt='Guglielmo Marconi'
-			imagePosition='right'
-		/>
+    <InfoSection
+      text='En 1894, Guglielmo Marconi transmitió señales de radio sin hilos, y en 1908, Lee DeForest inventó el triodo, que permitió la amplificación de señales eléctricas. La radio comercial comenzó en 1920 con la transmisión de señales AM y en 1933, Edwin Howard Armstrong inventó la FM, iniciando la transmisión comercial en 1936.'
+      imageUrl='/media/Guglielmo Marconi.jpg'
+      imageAlt='Guglielmo Marconi'
+      imagePosition='right'
+    />
 
-		<InfoSection
-			text='Aunque los principios fundamentales de las comunicaciones electrónicas han cambiado poco, los métodos y circuitos han evolucionado significativamente. La introducción de transistores y circuitos integrados ha permitido diseños más simples, miniaturización, mayor eficiencia y confiabilidad, y costos menores. La creciente necesidad de comunicación ha impulsado un enorme crecimiento en la industria de comunicaciones electrónicas, abarcando sistemas de cable metálico, microondas, satelitales y de fibra óptica.'
-		/>
+    <InfoSection
+      text='Aunque los principios fundamentales de las comunicaciones electrónicas han cambiado poco, los métodos y circuitos han evolucionado significativamente. La introducción de transistores y circuitos integrados ha permitido diseños más simples, miniaturización, mayor eficiencia y confiabilidad, y costos menores. La creciente necesidad de comunicación ha impulsado un enorme crecimiento en la industria de comunicaciones electrónicas, abarcando sistemas de cable metálico, microondas, satelitales y de fibra óptica.'
+    />
 
-		<div class="navigation-buttons">
-			
-			<a href="/pag1" class="button">Siguiente</a>
-		</div>
-		
-	</main>
+    <div class="navigation-buttons">
+      <a href="/pag1" class="button">Siguiente</a>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    color: white;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+  }
 
-	.navigation-buttons {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 2rem;
-	}
-	.button {
-		padding: 0.5rem 1rem;
-		background-color: #007BFF;
-		color: white;
-		text-decoration: none;
-		border-radius: 4px;
-	}
-	.button:hover {
-		background-color: #0056b3;
-	}
-	
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .info-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .info-section img {
+      margin: 0 auto 20px;
+    }
+  }
 </style>

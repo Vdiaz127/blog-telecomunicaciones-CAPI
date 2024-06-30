@@ -1,104 +1,104 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ChapterSection from '../components/ChapterSection.astro';
-import InfoSection from '../components/InfoSection.astro'
+import InfoSection from '../components/InfoSection.astro';
 ---
 
 <Layout title="MODULACIÓN Y DEMODULACIÓN">
-	<main>
-		<ChapterSection
-			title="MODULACIÓN Y DEMODULACIÓN"
-			content= "Como a menudo no es práctico propagar señales de información a través de cables metálicos o de fibra óptica, o a través de la atmósfera terrestre, con frecuencia es necesario modular la información de la fuente, con una señal analógica de mayor frecuencia, llamada portadora. En esencia, la señal portadora transporta la información a través del sistema. La señal de información modula a la portadora, cambiando su amplitud, su frecuencia o su fase. Modulación no es más que el proceso de cambiar una o más propiedades de la portadora, en proporción con la señal de información "
-		/>
-		<p>En comunicaciones electrónicas, modulación y demodulación son procesos cruciales para transmitir información eficientemente.</p>
-		<br>
+  <main>
+    <ChapterSection
+      title="MODULACIÓN Y DEMODULACIÓN"
+      content="Como a menudo no es práctico propagar señales de información a través de cables metálicos o de fibra óptica, o a través de la atmósfera terrestre, con frecuencia es necesario modular la información de la fuente, con una señal analógica de mayor frecuencia, llamada portadora. En esencia, la señal portadora transporta la información a través del sistema. La señal de información modula a la portadora, cambiando su amplitud, su frecuencia o su fase. Modulación no es más que el proceso de cambiar una o más propiedades de la portadora, en proporción con la señal de información."
+    />
 
-		<p><b>Modulación:</b>  Cambiar las propiedades de una señal portadora (una señal de alta frecuencia) con la información de la fuente, facilita la transmisión de información a través de diferentes medios como cables o el aire.</p>
-		<br>
-		<p><b>Tipos de Modulación Analógica:</b></p>
-		<ul class="list-disc">
-			<li class="ml-16"><span class="italic">AM (Modulación de Amplitud):</span> La amplitud de la portadora cambia según la información. </li>
-			<li class="ml-16"><span class="italic">FM (Modulación de Frecuencia):</span> La frecuencia de la portadora varía con la información.</li>
-			<li class="ml-16"><span class="italic">PM (Modulación de Fase):</span> La fase de la portadora se modifica según la información.</li>
-		</ul>
-		<br>
+    <p>En comunicaciones electrónicas, modulación y demodulación son procesos cruciales para transmitir información eficientemente.</p>
+    <br>
 
-		<h4 class="text-center font-bold">Sistemas de Comunicación</h4>
-		<br>
-		<p><b>Analógico:</b> La energía se transmite y recibe como señales continuas (ej. onda senoidal). Aquí, tanto la información como la portadora son señales analógicas.</p>
+    <p><b>Modulación:</b> Cambiar las propiedades de una señal portadora (una señal de alta frecuencia) con la información de la fuente, facilita la transmisión de información a través de diferentes medios como cables o el aire.</p>
+    <br>
+    <p><b>Tipos de Modulación Analógica:</b></p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li><span class="italic">AM (Modulación de Amplitud):</span> La amplitud de la portadora cambia según la información.</li>
+      <li><span class="italic">FM (Modulación de Frecuencia):</span> La frecuencia de la portadora varía con la información.</li>
+      <li><span class="italic">PM (Modulación de Fase):</span> La fase de la portadora se modifica según la información.</li>
+    </ul>
+    <br>
 
-		<p >Ejemplo: La ecuación de una onda senoidal de voltaje es </p>
-		<div class="normal-nums text-center">v(t)=Vsin(2πft+ϕ)</div>
-		donde: 
-		<ul class="list-disc">
-			<li class="ml-16">v(t) es el voltaje variable en el tiempo. </li>
-			<li class="ml-16">V es la amplitud máxima (volts).</li>
-			<li class="ml-16">f es la frecuencia (hertz).</li>
-			<li class="ml-16">ϕ es el desplazamiento de fase (radianes).</li>
-		</ul>
-		<br>
+    <h4 class="text-center font-bold">Sistemas de Comunicación</h4>
+    <br>
+    <p><b>Analógico:</b> La energía se transmite y recibe como señales continuas (ej. onda senoidal). Aquí, tanto la información como la portadora son señales analógicas.</p>
 
-		<p><b>Digital:</b> Incluye transmisión y radio digital, usando pulsos discretos (ej. +5V y tierra) para representar la información. La fuente puede ser analógica (convertida a digital antes de transmitir) o digital.</p>
-		<ul class="list-disc">
-			<li class="ml-16">Transmisión Digital: Pulsos digitales se transfieren entre dos puntos, sin portadora analógica.</li>
-			<li class="ml-16">Radio Digital: Transmisión de portadoras analógicas moduladas digitalmente.</li>
-		</ul>
+    <p>Ejemplo: La ecuación de una onda senoidal de voltaje es</p>
+    <div class="normal-nums text-center">v(t)=Vsin(2πft+ϕ)</div>
+    <p>donde:</p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li>v(t) es el voltaje variable en el tiempo.</li>
+      <li>V es la amplitud máxima (volts).</li>
+      <li>f es la frecuencia (hertz).</li>
+      <li>ϕ es el desplazamiento de fase (radianes).</li>
+    </ul>
+    <br>
 
-		<br>
-		<p class="font-bold">Tecnicas de modulacion digital:</p>
-		<ul class="list-disc">
-			<li class="ml-16"><span class="italic">ASK (Conmutación de Amplitud):</span> La amplitud de la portadora varía según la señal digital.</li>
-			<li class="ml-16"><span class="italic">FSK (Conmutación de Frecuencia):</span> La frecuencia de la portadora varía con la señal digital.</li>
-			<li class="ml-16"><span class="italic">PSK (Conmutación de Fase):</span> La fase de la portadora cambia según la señal digital.</li>
-			<li class="ml-16"><span class="italic">QAM (Modulación de Amplitud en Cuadratura):</span> Se varían simultáneamente la amplitud y la fase.</li>
-		</ul>
+    <p><b>Digital:</b> Incluye transmisión y radio digital, usando pulsos discretos (ej. +5V y tierra) para representar la información. La fuente puede ser analógica (convertida a digital antes de transmitir) o digital.</p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li>Transmisión Digital: Pulsos digitales se transfieren entre dos puntos, sin portadora analógica.</li>
+      <li>Radio Digital: Transmisión de portadoras analógicas moduladas digitalmente.</li>
+    </ul>
 
-		<br>
-		<p><b>Demodulación:</b> Proceso inverso a la modulación. Recupera la información original de la señal portadora en el receptor, extrae la información de la señal modulada para su uso.</p>
-		<p><b>Importancia:</b></p>
-		<ul class="list-decimal">
-			<li class="ml-16">Irradiación de Señales: Facilita la transmisión de señales de baja frecuencia como energía electromagnética.</li>
-			<li class="ml-16">Evitar Interferencias: Permite que varias señales ocupen diferentes bandas de frecuencia para no interferir entre sí.</li>
-		</ul>
-		<p><b>Ejemplo de Uso:</b> Estaciones de FM: Utilizan diferentes canales de frecuencia para transmitir sin interferencias, con un canal de voz típico ocupando 3 kHz</p>
-		<br>
-		<p><b>Proceso de Comunicación</b></p>
-		<ul class="list-decimal">
-			<li class="ml-16">Transmisor: Convierte la información en una señal modulada de alta frecuencia.</li>
-			<li class="ml-16">Medio de Transmisión: Transporta la señal al receptor.</li>
-			<li class="ml-16">Receptor: Amplifica, convierte y demodula la señal para recuperar la información original.</li>
-		</ul>
-		
+    <br>
+    <p class="font-bold">Técnicas de modulación digital:</p>
+    <ul class="list-disc pl-4 md:pl-16">
+      <li><span class="italic">ASK (Conmutación de Amplitud):</span> La amplitud de la portadora varía según la señal digital.</li>
+      <li><span class="italic">FSK (Conmutación de Frecuencia):</span> La frecuencia de la portadora varía con la señal digital.</li>
+      <li><span class="italic">PSK (Conmutación de Fase):</span> La fase de la portadora cambia según la señal digital.</li>
+      <li><span class="italic">QAM (Modulación de Amplitud en Cuadratura):</span> Se varían simultáneamente la amplitud y la fase.</li>
+    </ul>
 
-		<InfoSection
-			text="La modulación se realiza en el transmisor mediante un modulador, mientras que la demodulación se lleva a cabo en el receptor usando un demodulador. Estos procesos aseguran la eficiente transmisión y recepción de información en diversas aplicaciones, desde radio y televisión hasta redes de datos modernas."
-		/>
+    <br>
+    <p><b>Demodulación:</b> Proceso inverso a la modulación. Recupera la información original de la señal portadora en el receptor, extrae la información de la señal modulada para su uso.</p>
+    <p><b>Importancia:</b></p>
+    <ul class="list-decimal pl-4 md:pl-16">
+      <li>Irradiación de Señales: Facilita la transmisión de señales de baja frecuencia como energía electromagnética.</li>
+      <li>Evitar Interferencias: Permite que varias señales ocupen diferentes bandas de frecuencia para no interferir entre sí.</li>
+    </ul>
+    <p><b>Ejemplo de Uso:</b></p> Estaciones de FM: Utilizan diferentes canales de frecuencia para transmitir sin interferencias, con un canal de voz típico ocupando 3 kHz.</p>
+    <br>
+    <p><b>Proceso de Comunicación:</b></p>
+    <ul class="list-decimal pl-4 md:pl-16">
+      <li>Transmisor: Convierte la información en una señal modulada de alta frecuencia.</li>
+      <li>Medio de Transmisión: Transporta la señal al receptor.</li>
+      <li>Receptor: Amplifica, convierte y demodula la señal para recuperar la información original.</li>
+    </ul>
 
-		<img src="media/grafica2.jpg">
+    <InfoSection
+      text="La modulación se realiza en el transmisor mediante un modulador, mientras que la demodulación se lleva a cabo en el receptor usando un demodulador. Estos procesos aseguran la eficiente transmisión y recepción de información en diversas aplicaciones, desde radio y televisión hasta redes de datos modernas."
+    />
 
-		
-		
-		
-		<div class="navigation-buttons">
-			<a href="/pag1" class="button">Atrás</a>
-			<a href="/pag3" class="button">Siguiente</a>
-		</div>
-		
-	</main>
+    <img src="media/grafica2.jpg" class="mx-auto my-4">
+
+    <div class="navigation-buttons">
+      <a href="/pag1" class="button">Atrás</a>
+      <a href="/pag3" class="button">Siguiente</a>
+    </div>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 800px;
+    color: white;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+  }
 
-	.navigation-buttons {
+  .normal-nums {
+    font-family: sans-serif;
+  }
+
+  .navigation-buttons {
 		display: flex;
 		justify-content: space-between;
 		margin-top: 2rem;
@@ -113,4 +113,14 @@ import InfoSection from '../components/InfoSection.astro'
 	.button:hover {
 		background-color: #0056b3;
 	}
+
+  @media (max-width: 768px) {
+    main {
+      font-size: 1rem;
+    }
+
+    .list-disc, .list-decimal {
+      padding-left: 1rem;
+    }
+  }
 </style>
